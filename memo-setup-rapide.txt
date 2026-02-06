@@ -1,0 +1,43 @@
+Configuration VPS-3 OVH pour Projet uyoop (Gamme 2026) — V2
+========================================================
+Specs : 8 vCores / 24 Go RAM / 200 Go NVMe / 1.5 Gbit/s
+Coût  : 14.28€ TTC/mois (engagement 12 mois)
+Backup: 1 jour inclus (gratuit) | 7 jours = 3.96€/mois
+
+Identifiants (À remplir après réception) :
+- IP : [A DEFINIR]
+- User : debian / root
+- Access : SSH Key Only
+
+Noms de domaine :
+- uyoop.fr / uyoop.com = PRO (vitrine, services métier)
+- cjenti.fr / cjenti.com = PERSO (mail, drive)
+
+Services Exposés (perso - cjenti.com) :
+- https://mail.cjenti.com (Mailcow UI — Docker Compose standalone)
+- https://webmail.cjenti.com (SOGo)
+- https://drive.cjenti.com (Nextcloud — K3s)
+
+Services Exposés (pro - uyoop.fr) :
+- https://blog.uyoop.fr (Ghost — K3s)
+- https://uyoop.fr (Vitrine)
+
+Forge Logicielle :
+- https://gitlab.com (SaaS Free Tier — Phase 1-2)
+- GitLab Runner self-hosted sur VPS-2 (Phase 2+)
+- Mirror Git automatique : cron `git clone --mirror` vers VPS-3
+- Mirror GitLab → GitHub : repos publics (portfolio/vitrine technique)
+
+Checklist Rapide Sécurité "J-0" :
+[ ] `apt update && apt upgrade -y`
+[ ] Création user sudoer perso (`cj`)
+[ ] Copie clé SSH publique
+[ ] `passwd -l root` (Lock root password)
+[ ] Config `/etc/ssh/sshd_config` (PermitRootLogin no, PasswordAuthentication no)
+[ ] Config Firewall UFW : `ufw allow 22,80,443/tcp && ufw enable`
+[ ] Install CrowdSec : `curl -s https://install.crowdsec.net | bash`
+[ ] Install Docker & Docker Compose (pour Mailcow)
+[ ] Install K3s : `curl -sfL https://get.k3s.io | sh -`
+[ ] Déployer Mailcow (docker-compose)
+[ ] Déployer Nextcloud + Ghost + Authelia (K3s manifests)
+[ ] Config Traefik + Cert-Manager (Let's Encrypt — utiliser staging d'abord !)

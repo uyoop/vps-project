@@ -1,0 +1,1570 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>DOSSIER-COMPLET-UYOOP</title>
+  <style>
+    html {
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 12px;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      html {
+        background-color: white;
+      }
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    svg {
+      height: auto;
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, Consolas, 'Lucida Console', monospace;
+      font-size: 85%;
+      margin: 0;
+      hyphens: manual;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      background-color: #1a1a1a;
+      border: none;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC ul {
+      padding-left: 1.3em;
+    }
+    #TOC > ul {
+      padding-left: 0;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+</head>
+<body>
+<nav id="TOC" role="doc-toc">
+<ul>
+<li><a href="#dossier-projet-infrastructure-souveraine-uyoop"
+id="toc-dossier-projet-infrastructure-souveraine-uyoop">DOSSIER PROJET :
+INFRASTRUCTURE SOUVERAINE UYOOP</a></li>
+<li><a href="#sommaire-exécutif" id="toc-sommaire-exécutif">SOMMAIRE
+EXÉCUTIF</a>
+<ul>
+<li><a href="#plan-du-dossier" id="toc-plan-du-dossier">PLAN DU
+DOSSIER</a></li>
+</ul></li>
+<li><a href="#cadre-instructions" id="toc-cadre-instructions">00. CADRE
+&amp; INSTRUCTIONS</a>
+<ul>
+<li><a href="#contexte-du-projet" id="toc-contexte-du-projet">1.
+Contexte du Projet</a></li>
+<li><a href="#environnement-technique"
+id="toc-environnement-technique">2. Environnement Technique</a></li>
+</ul></li>
+<li><a href="#architecture-technique"
+id="toc-architecture-technique">01. ARCHITECTURE TECHNIQUE</a>
+<ul>
+<li><a href="#vision-technique-slogan"
+id="toc-vision-technique-slogan">1. Vision Technique &amp;
+Slogan</a></li>
+<li><a href="#infrastructure-physique-topologie-distribuée"
+id="toc-infrastructure-physique-topologie-distribuée">2. Infrastructure
+Physique (Topologie Distribuée)</a>
+<ul>
+<li><a href="#node-a-core-prod-opérationnel-février"
+id="toc-node-a-core-prod-opérationnel-février">Node A : “CORE-PROD”
+(Opérationnel Février)</a></li>
+<li><a href="#node-b-ai-lab-extension-phase-2---avril"
+id="toc-node-b-ai-lab-extension-phase-2---avril">Node B : “AI-LAB”
+(Extension Phase 2 - Avril)</a></li>
+</ul></li>
+<li><a href="#la-golden-stack-technologique"
+id="toc-la-golden-stack-technologique">3. La “Golden Stack”
+Technologique</a>
+<ul>
+<li><a href="#a.-orchestration-système-infrastructure-as-code"
+id="toc-a.-orchestration-système-infrastructure-as-code">A.
+Orchestration &amp; Système (Infrastructure as Code)</a></li>
+<li><a href="#b.-matrice-des-services-applicatifs"
+id="toc-b.-matrice-des-services-applicatifs">B. Matrice des Services
+Applicatifs</a></li>
+<li><a href="#c.-sécurité-defense-in-depth"
+id="toc-c.-sécurité-defense-in-depth">C. Sécurité
+“Defense-In-Depth”</a></li>
+</ul></li>
+<li><a href="#stratégie-de-données-stockage-hybride-immuable"
+id="toc-stratégie-de-données-stockage-hybride-immuable">4. Stratégie de
+Données (Stockage Hybride &amp; Immuable)</a>
+<ul>
+<li><a href="#gouvernance-dual-k3s-docker-compose"
+id="toc-gouvernance-dual-k3s-docker-compose">Gouvernance Dual : K3s +
+Docker Compose</a></li>
+</ul></li>
+<li><a href="#flux-réseaux-critiques" id="toc-flux-réseaux-critiques">5.
+Flux Réseaux Critiques</a>
+<ul>
+<li><a href="#schéma-réseau-ip-ports"
+id="toc-schéma-réseau-ip-ports">Schéma Réseau IP &amp; Ports</a></li>
+<li><a href="#flux-mermaid" id="toc-flux-mermaid">Flux Mermaid</a></li>
+</ul></li>
+</ul></li>
+<li><a href="#planning-de-migration" id="toc-planning-de-migration">02.
+PLANNING DE MIGRATION</a>
+<ul>
+<li><a href="#phase-1-opération-socle-immédiat---22-février"
+id="toc-phase-1-opération-socle-immédiat---22-février">🔥 PHASE 1 :
+“OPÉRATION SOCLE” (Immédiat - 22 Février)</a>
+<ul>
+<li><a href="#semaine-06-infrastructure-as-code-init"
+id="toc-semaine-06-infrastructure-as-code-init">Semaine 06
+(Infrastructure as Code Init)</a></li>
+<li><a href="#semaine-07-services-vitaux"
+id="toc-semaine-07-services-vitaux">Semaine 07 (Services
+Vitaux)</a></li>
+</ul></li>
+<li><a href="#phase-2-lusine-logicielle-mars---avril"
+id="toc-phase-2-lusine-logicielle-mars---avril">🛠️ PHASE 2 : “L’USINE
+LOGICIELLE” (Mars - Avril)</a>
+<ul>
+<li><a href="#mars-identité-web" id="toc-mars-identité-web">Mars :
+Identité &amp; Web</a></li>
+<li><a href="#avril-ia-qualité-extension-ai-lab"
+id="toc-avril-ia-qualité-extension-ai-lab">Avril : IA &amp; Qualité
+(Extension “AI-Lab”)</a></li>
+</ul></li>
+<li><a href="#phase-3-consolidation-résilience-mai---juin"
+id="toc-phase-3-consolidation-résilience-mai---juin">🚀 PHASE 3 :
+“CONSOLIDATION &amp; RÉSILIENCE” (Mai - Juin)</a>
+<ul>
+<li><a href="#mai-big-data-finops" id="toc-mai-big-data-finops">Mai :
+Big Data &amp; FinOps</a></li>
+<li><a href="#juin-soutenance-drp" id="toc-juin-soutenance-drp">Juin :
+Soutenance &amp; DRP</a></li>
+</ul></li>
+<li><a href="#phase-4-lancement-perspectives-juillet---septembre"
+id="toc-phase-4-lancement-perspectives-juillet---septembre">🌐 PHASE 4 :
+“LANCEMENT &amp; PERSPECTIVES” (Juillet - Septembre)</a>
+<ul>
+<li><a href="#fin-juin-pause" id="toc-fin-juin-pause">Fin Juin :
+Pause</a></li>
+<li><a href="#juillet-août-finalisation-plateforme"
+id="toc-juillet-août-finalisation-plateforme">Juillet-Août :
+Finalisation Plateforme</a></li>
+<li><a href="#septembre-phase-daction-intensive"
+id="toc-septembre-phase-daction-intensive">Septembre : Phase d’Action
+Intensive</a></li>
+</ul></li>
+<li><a href="#calendrier-des-risques-mitigations"
+id="toc-calendrier-des-risques-mitigations">Calendrier des Risques &amp;
+Mitigations</a></li>
+</ul></li>
+<li><a href="#analyse-finops" id="toc-analyse-finops">03. ANALYSE
+FINOPS</a>
+<ul>
+<li><a href="#situation-initiale-2025---legacy"
+id="toc-situation-initiale-2025---legacy">1. Situation Initiale (2025 -
+Legacy)</a></li>
+<li><a href="#infrastructure-cible-2026---souveraine"
+id="toc-infrastructure-cible-2026---souveraine">2. Infrastructure Cible
+(2026 - Souveraine)</a>
+<ul>
+<li><a href="#coûts-fixes-infrastructure"
+id="toc-coûts-fixes-infrastructure">Coûts Fixes
+(Infrastructure)</a></li>
+<li><a href="#coûts-variables-options-flexibilité"
+id="toc-coûts-variables-options-flexibilité">Coûts Variables &amp;
+Options (Flexibilité)</a></li>
+</ul></li>
+<li><a href="#synthèse-roi-valeur-ajoutée"
+id="toc-synthèse-roi-valeur-ajoutée">3. Synthèse ROI &amp; Valeur
+Ajoutée</a>
+<ul>
+<li><a href="#gains-financiers" id="toc-gains-financiers">Gains
+Financiers</a></li>
+<li><a href="#budget-worst-case-scénario-pessimiste"
+id="toc-budget-worst-case-scénario-pessimiste">Budget “Worst Case”
+(Scénario Pessimiste)</a></li>
+<li><a href="#coût-one-shot-transfert-domaines"
+id="toc-coût-one-shot-transfert-domaines">Coût One-Shot : Transfert
+Domaines</a></li>
+<li><a href="#valeur-métier-intangible"
+id="toc-valeur-métier-intangible">Valeur Métier (Intangible)</a></li>
+</ul></li>
+</ul></li>
+<li><a href="#perspectives-i.a." id="toc-perspectives-i.a.">04.
+PERSPECTIVES I.A.</a>
+<ul>
+<li><a href="#pourquoi-lia-dans-ce-projet"
+id="toc-pourquoi-lia-dans-ce-projet">1. Pourquoi l’IA dans ce projet
+?</a></li>
+<li><a href="#cas-dusage-implémentés-phase-2"
+id="toc-cas-dusage-implémentés-phase-2">2. Cas d’Usage Implémentés
+(Phase 2)</a>
+<ul>
+<li><a href="#a.-moteur-de-recherche-documentaire-rag"
+id="toc-a.-moteur-de-recherche-documentaire-rag">A. Moteur de Recherche
+Documentaire (RAG)</a></li>
+<li><a href="#b.-analyse-statique-augmentée-sast"
+id="toc-b.-analyse-statique-augmentée-sast">B. Analyse Statique
+Augmentée (SAST)</a></li>
+</ul></li>
+<li><a href="#architecture-logique-du-nœud-ia"
+id="toc-architecture-logique-du-nœud-ia">3. Architecture Logique du Nœud
+IA</a></li>
+<li><a href="#futur-vers-lauto-remédiation"
+id="toc-futur-vers-lauto-remédiation">4. Futur : Vers l’Auto-Remédiation
+?</a></li>
+</ul></li>
+<li><a href="#référentiel-de-compétences"
+id="toc-référentiel-de-compétences">05. RÉFÉRENTIEL DE COMPÉTENCES</a>
+<ul>
+<li><a
+href="#bloc-1-automatiser-le-déploiement-dune-infrastructure-rncp36061bc01"
+id="toc-bloc-1-automatiser-le-déploiement-dune-infrastructure-rncp36061bc01">Bloc
+1 : Automatiser le déploiement d’une infrastructure
+(RNCP36061BC01)</a></li>
+<li><a href="#bloc-2-déployer-en-continu-une-application-rncp36061bc02"
+id="toc-bloc-2-déployer-en-continu-une-application-rncp36061bc02">Bloc 2
+: Déployer en continu une application (RNCP36061BC02)</a></li>
+<li><a href="#bloc-3-superviser-les-services-déployés-rncp36061bc03"
+id="toc-bloc-3-superviser-les-services-déployés-rncp36061bc03">Bloc 3 :
+Superviser les services déployés (RNCP36061BC03)</a></li>
+<li><a href="#synthèse-de-la-couverture"
+id="toc-synthèse-de-la-couverture">Synthèse de la Couverture</a></li>
+</ul></li>
+</ul>
+</nav>
+<h1 id="dossier-projet-infrastructure-souveraine-uyoop">DOSSIER PROJET :
+INFRASTRUCTURE SOUVERAINE UYOOP</h1>
+<div style="text-align:center;">
+<figure>
+<img src="SetUpUyoop.png" alt="Logo Uyoop" />
+<figcaption aria-hidden="true">Logo Uyoop</figcaption>
+</figure>
+<h2 id="une-stratégie-à-votre-image.">“Une stratégie à votre
+image.”</h2>
+<h3
+id="architecture-devsecops-à-limage-de-vos-exigences."><em>Architecture
+DevSecOps à l’image de vos exigences.</em></h3>
+<hr />
+<p><strong>PROJET DE TITRE RNCP 36061 (Niveau 6)</strong><br />
+<em>Administrateur Systèmes DevOps</em></p>
+<p><strong>Auteur</strong> : Christopher JENKINS<br />
+<strong>Date</strong> : Février 2026<br />
+<strong>Version</strong> : 5.0 (V2 — Audit complet, PRA/PCA, FinOps
+worst-case, Phase 4+ post-certif, schéma réseau)</p>
+</div>
+<div style="page-break-after: always;">
+
+</div>
+<h1 id="sommaire-exécutif">SOMMAIRE EXÉCUTIF</h1>
+<p>Ce dossier présente la refonte complète de l’infrastructure numérique
+<strong>uyoop</strong>.<br />
+Du statut de consommateur de services SaaS dispersés, nous passons à
+celui d’architecte d’une plateforme souveraine, sécurisée et pilotée par
+le code (<strong>Infrastructure as Code</strong>).</p>
+<p>Ce projet, mené en parallèle des missions de stage, sert de terrain
+d’application réel aux compétences visées par le titre
+<strong>Administrateur Systèmes DevOps</strong> : 1.
+<strong>Concevoir</strong> une architecture sécurisée (Zero-Trust). 2.
+<strong>Mettre en œuvre</strong> une chaîne CI/CD complète (GitLab). 3.
+<strong>Superviser et Maintenir</strong> en condition opérationnelle. 4.
+<strong>Intégrer</strong> les nouveaux paradigmes (IA &amp; FinOps).</p>
+<hr />
+<h2 id="plan-du-dossier">PLAN DU DOSSIER</h2>
+<ul>
+<li><strong>01. ARCHITECTURE</strong> : Choix des technologies (K3s,
+Traefik, Ansible), Topologie, Sécurité Collaborative.</li>
+<li><strong>02. PLANNING</strong> : Roadmap de migration, stratégie de
+continuité (Plan B), perspectives post-certification.</li>
+<li><strong>03. FINOPS</strong> : Analyse des coûts, ROI et Budget
+Sérénité.</li>
+<li><strong>04. PERSPECTIVES I.A.</strong> : L’innovation au service de
+l’exploitation.</li>
+<li><strong>05. RÉFÉRENTIEL DE COMPÉTENCES</strong> : Tableau de
+correspondance avec le titre RNCP 36061.</li>
+<li><strong>06. PRA/PCA</strong> : Plan de Reprise &amp; Continuité
+d’Activité (RPO/RTO, scénarios, procédures).</li>
+</ul>
+<div style="page-break-after: always;">
+
+</div>
+<!-- Inclusion du contenu 00 -->
+<h1 id="cadre-instructions">00. CADRE &amp; INSTRUCTIONS</h1>
+<h2 id="contexte-du-projet">1. Contexte du Projet</h2>
+<p>La migration <strong>uyoopVPS</strong> n’est pas une simple opération
+technique. C’est un projet structurant réalisé durant la période de
+stage (Fév-Mai 2026). Il démontre la capacité du candidat à gérer un
+projet d’infrastructure complet (“Side Project” professionnel) tout en
+assurant ses missions quotidiennes en entreprise.</p>
+<h2 id="environnement-technique">2. Environnement Technique</h2>
+<ul>
+<li><strong>Poste de Travail</strong> : Debian 13 (Labo Perso) &amp;
+Environnement Enterprise.</li>
+<li><strong>Cloud Provider</strong> : OVHcloud (France).</li>
+<li><strong>Philosophie</strong> : “Zero-Trust”, “Infrastructure as
+Code”, “Souveraineté des Données”.</li>
+</ul>
+<div style="page-break-after: always;">
+
+</div>
+<!-- Inclusion du contenu 01 -->
+<h1 id="architecture-technique">01. ARCHITECTURE TECHNIQUE</h1>
+<blockquote>
+<p><strong>Cible</strong> : Infrastructure Souveraine, DevSecOps,
+support Titre RNCP (Juin 2026). <strong>Statut</strong> : V2 (6 Février
+2026) — Intègre stratégie GitLab hybride, corrections specs OVH,
+harmonisation sécurité.</p>
+</blockquote>
+<h2 id="vision-technique-slogan">1. Vision Technique &amp; Slogan</h2>
+<p><strong>uyoop : “Une stratégie à votre image”</strong></p>
+<p>En DevSecOps, “votre image” n’est pas seulement graphique, c’est
+votre empreinte numérique (Docker Images, System Images). Notre
+stratégie est de rendre cette image <strong>souveraine, sécurisée et
+immuable</strong>. Nous passons d’une consommation passive de services
+(SaaS) à une <strong>Infrastructure as Code (IaC)</strong> où chaque
+configuration reflète exactement les besoins métier, sans compromis sur
+la sécurité.</p>
+<hr />
+<h2 id="infrastructure-physique-topologie-distribuée">2. Infrastructure
+Physique (Topologie Distribuée)</h2>
+<p>Pour garantir la sécurité (isolation) et la performance (IA),
+l’architecture repose sur deux nœuds interconnectés (Cluster
+Hybride).</p>
+<h3 id="node-a-core-prod-opérationnel-février">Node A : “CORE-PROD”
+(Opérationnel Février)</h3>
+<ul>
+<li><strong>Infrastructure</strong> : OVH <strong>VPS-3</strong> (8
+vCores / 24 Go RAM / 200 Go NVMe).</li>
+<li><strong>Rôle</strong> : Hébergement des services critiques
+“Business”.</li>
+<li><strong>Charge</strong> : Stable, haute disponibilité requise.</li>
+<li><strong>Services</strong> : Mailcow (Mail), Nextcloud (Data), Ghost
+(Web), Authelia (Secu).</li>
+</ul>
+<h3 id="node-b-ai-lab-extension-phase-2---avril">Node B : “AI-LAB”
+(Extension Phase 2 - Avril)</h3>
+<ul>
+<li><strong>Infrastructure</strong> : OVH <strong>VPS-2</strong> (6
+vCores / 12 Go RAM / 100 Go NVMe).</li>
+<li><strong>Rôle</strong> : R&amp;D, Intelligence Artificielle, Analyse
+de Code, GitLab Runner self-hosted.</li>
+<li><strong>Charge</strong> : Variable (Burstable), traitements
+lourds.</li>
+<li><strong>Services</strong> : GitLab Runner (connecté à gitlab.com),
+LLM Local ou Gateway API, SonarQube (Quality Gate), Perplexica
+(Search).</li>
+</ul>
+<blockquote>
+<p><strong>Stratégie Noms de Domaine</strong> : * <code>uyoop.fr</code>
+/ <code>uyoop.com</code> — <strong>Professionnel</strong> : Vitrine,
+services métier, identité entreprise (<code>blog.uyoop.fr</code>,
+<code>git.uyoop.fr</code>). * <code>cjenti.fr</code> /
+<code>cjenti.com</code> — <strong>Personnel</strong> : Mail, Drive,
+services perso (<code>mail.cjenti.com</code>,
+<code>drive.cjenti.com</code>).</p>
+<p><strong>Liaison</strong> : Tunnel WireGuard privé (Mesh, MTU 1420,
+PersistentKeepalive=25) pour sécuriser les flux inter-nœuds sans
+exposition publique.</p>
+<p><strong>Stratégie GitLab</strong> : Phase 1-2 sur
+<strong>gitlab.com</strong> (Free Tier) pour préserver la RAM du VPS-3.
+Runner self-hosted sur VPS-2. Migration vers GitLab CE self-hosted
+envisageable en Phase 3+ si la souveraineté totale du code l’exige.
+Mirror automatique gitlab.com → VPS comme plan de réversibilité.</p>
+<p><strong>Mirror GitHub</strong> : Les repos publics sont mirrorés
+automatiquement de GitLab → <strong>GitHub</strong> pour la visibilité
+portfolio et la vitrine technique.</p>
+</blockquote>
+<hr />
+<h2 id="la-golden-stack-technologique">3. La “Golden Stack”
+Technologique</h2>
+<h3 id="a.-orchestration-système-infrastructure-as-code">A.
+Orchestration &amp; Système (Infrastructure as Code)</h3>
+<p>Toute l’infrastructure est définie par le code (GitOps). *
+<strong>OS</strong> : Debian 12 (Bookworm) durci. *
+<strong>Provisioning</strong> : <strong>Ansible</strong> (Configuration
+Management) pour l’initialisation des nœuds et la sécurité. *
+<strong>Orchestrateur</strong> : <strong>K3s</strong> (Lightweight
+Kubernetes). * <em>Architecture</em> : Multi-node capable (Server +
+Agent). * <em>Stockage</em> : <code>local-path-provisioner</code>
+(inclus K3s) en Phase 1. Longhorn envisageable en multi-node. *
+<strong>Ingress</strong> : <strong>Traefik</strong> Cloud Native Router.
+* <strong>Certificats</strong> : <strong>Cert-Manager</strong> (ACME
+Let’s Encrypt). * <strong>Maintenance</strong> : <strong>Renovate
+Bot</strong> (Mises à jour automatiques des dépendances).</p>
+<h3 id="b.-matrice-des-services-applicatifs">B. Matrice des Services
+Applicatifs</h3>
+<table>
+<colgroup>
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Service</th>
+<th style="text-align: left;">Rôle</th>
+<th style="text-align: left;">Namespace K8s</th>
+<th style="text-align: left;">Stockage</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"><strong>Mailcow</strong></td>
+<td style="text-align: left;">Serveur Mail Complet (Postfix/Dovecot) —
+<strong>Docker Compose standalone</strong> (seul mode officiellement
+supporté)</td>
+<td style="text-align: left;"><code>prod-mail</code> (Docker)</td>
+<td style="text-align: left;">NVMe</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Nextcloud</strong></td>
+<td style="text-align: left;">Hub Collaboratif (Fichiers, Cal,
+Contacts)</td>
+<td style="text-align: left;"><code>prod-cloud</code></td>
+<td style="text-align: left;">Mixte (Cache NVMe / Data S3)</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>GitLab</strong></td>
+<td style="text-align: left;">Forge Logicielle &amp; CI/CD (SaaS
+gitlab.com Phase 1-2, self-hosted optionnel Phase 3+)</td>
+<td style="text-align: left;"><code>devops-factory</code></td>
+<td style="text-align: left;">gitlab.com (SaaS) + S3 (Artifacts)</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Ghost</strong></td>
+<td style="text-align: left;">CMS Vitrine &amp; LMS</td>
+<td style="text-align: left;"><code>prod-web</code></td>
+<td style="text-align: left;">NVMe</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>Authelia</strong></td>
+<td style="text-align: left;">Fournisseur d’Identité (SSO, OIDC,
+2FA)</td>
+<td style="text-align: left;"><code>security</code></td>
+<td style="text-align: left;">Redis (Session)</td>
+</tr>
+</tbody>
+</table>
+<h3 id="c.-sécurité-defense-in-depth">C. Sécurité
+“Defense-In-Depth”</h3>
+<ol type="1">
+<li><strong>Périmètre Réseau</strong> : <strong>UFW</strong> (Firewall
+hôte) + <strong>CrowdSec</strong> (détection d’intrusions collaborative,
+remplace Fail2Ban) pour une défense basée sur la réputation IP
+communautaire.</li>
+<li><strong>Identité Zero-Trust</strong> : Portail unique (SSO Authelia)
+pour toutes les WebUIs. Pas d’accès direct sauf exception
+documentée.</li>
+<li><strong>Application</strong> : Scans de vulnérabilités (Trivy) et
+analyse statique (SonarQube) intégrés aux pipelines CI/CD.</li>
+<li><strong>Réseau</strong> : <code>NetworkPolicies</code> Kubernetes
+interdisant le trafic <code>dev</code> -&gt; <code>prod</code>.</li>
+<li><strong>Secrets</strong> : Double approche complémentaire :
+<ul>
+<li><strong>Sealed Secrets</strong> (Bitnami) : Chiffrement asymétrique
+des secrets dans Git (GitOps-safe). <strong>Déployé Phase 2</strong>
+(Avril).</li>
+<li><strong>HashiCorp Vault</strong> : Gestion dynamique des secrets
+runtime (rotation, leases, injection sidecar). <strong>Déployé Phase
+3</strong> (Mai).</li>
+<li><em>Flux</em> : Sealed Secrets pour le stockage Git → Vault pour
+l’injection runtime dans les Pods.</li>
+</ul></li>
+</ol>
+<hr />
+<h2 id="stratégie-de-données-stockage-hybride-immuable">4. Stratégie de
+Données (Stockage Hybride &amp; Immuable)</h2>
+<p>Pour optimiser les coûts et la performance des disques NVMe limités
+:</p>
+<ul>
+<li><strong>Tier 1 (Performance)</strong> : Base de données, Code
+source, Emails récents (&lt; 90 jours).
+<ul>
+<li><em>Support</em> : NVMe Local (VPS).</li>
+</ul></li>
+<li><strong>Tier 2 (Capacité)</strong> : Drive personnel, Archives
+mails, Artifacts CI/CD.
+<ul>
+<li><em>Support</em> : <strong>Object Storage S3</strong> (Scalable à
+l’infini).</li>
+</ul></li>
+<li><strong>Stratégie Backup</strong> : Règle du <strong>3-2-1</strong>
+renforcée.
+<ul>
+<li>Snapshots locaux (local-path-provisioner/LVM) + sauvegarde auto VPS
+incluse (1 jour, gamme OVH 2026).</li>
+<li>Backup S3 chiffré (Restic/Velero) avec <strong>Object Lock</strong>
+(Immuabilité Ransomware).</li>
+<li>Copie froide (Disque dur local Admin).</li>
+<li><strong>Test DRP</strong> : Exercice biannuel de restauration
+complète.</li>
+</ul></li>
+</ul>
+<h3 id="gouvernance-dual-k3s-docker-compose">Gouvernance Dual : K3s +
+Docker Compose</h3>
+<p>Mailcow fonctionne en Docker Compose standalone, les autres services
+sous K3s. Unification par : * <strong>Backup</strong> : Script
+<code>restic</code> unique couvrant <code>/opt/mailcow/</code> (Docker)
+et les PV K3s dans le même job cron. * <strong>Monitoring</strong> :
+<code>node-exporter</code> + <code>cAdvisor</code> couvrent les deux
+runtimes. Dashboard Grafana unifié. * <strong>Cycle de vie</strong> :
+<code>Renovate Bot</code> surveille images Docker (Mailcow) et charts
+Helm (K3s) via le même dépôt Git.</p>
+<hr />
+<h2 id="flux-réseaux-critiques">5. Flux Réseaux Critiques</h2>
+<h3 id="schéma-réseau-ip-ports">Schéma Réseau IP &amp; Ports</h3>
+<table>
+<colgroup>
+<col style="width: 20%" />
+<col style="width: 20%" />
+<col style="width: 20%" />
+<col style="width: 20%" />
+<col style="width: 20%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Composant</th>
+<th style="text-align: left;">Interface</th>
+<th style="text-align: left;">Adresse / Plage</th>
+<th style="text-align: left;">Ports Exposés</th>
+<th style="text-align: left;">Note</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"><strong>VPS-3</strong> (Core-Prod)</td>
+<td style="text-align: left;"><code>eth0</code> (public)</td>
+<td style="text-align: left;">IP publique OVH</td>
+<td style="text-align: left;">22 (SSH), 80, 443, 25, 587, 993
+(SMTP/IMAP)</td>
+<td style="text-align: left;">UFW + CrowdSec</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>VPS-3</strong> (Core-Prod)</td>
+<td style="text-align: left;"><code>wg0</code> (WireGuard)</td>
+<td style="text-align: left;"><code>10.8.0.1/24</code></td>
+<td style="text-align: left;">51820/UDP</td>
+<td style="text-align: left;">Tunnel mesh</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>VPS-2</strong> (AI-Lab)</td>
+<td style="text-align: left;"><code>eth0</code> (public)</td>
+<td style="text-align: left;">IP publique OVH</td>
+<td style="text-align: left;">22 (SSH)</td>
+<td style="text-align: left;">Pas de services Web directs</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>VPS-2</strong> (AI-Lab)</td>
+<td style="text-align: left;"><code>wg0</code> (WireGuard)</td>
+<td style="text-align: left;"><code>10.8.0.2/24</code></td>
+<td style="text-align: left;">51820/UDP</td>
+<td style="text-align: left;">Tunnel mesh</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>K3s</strong> (Cluster
+Network)</td>
+<td style="text-align: left;"><code>cni0</code></td>
+<td style="text-align: left;"><code>10.42.0.0/16</code> (Pods)</td>
+<td style="text-align: left;">Interne</td>
+<td style="text-align: left;">Flannel VXLAN (défaut K3s)</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>K3s</strong> (Service
+Network)</td>
+<td style="text-align: left;"><code>ClusterIP</code></td>
+<td style="text-align: left;"><code>10.43.0.0/16</code> (Services)</td>
+<td style="text-align: left;">Interne</td>
+<td style="text-align: left;">DNS interne CoreDNS</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>Traefik</strong></td>
+<td style="text-align: left;"><code>LoadBalancer</code></td>
+<td style="text-align: left;">Bind 80/443 sur <code>eth0</code></td>
+<td style="text-align: left;">80 (redirect), 443 (TLS)</td>
+<td style="text-align: left;">Entry point unique</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Mailcow</strong></td>
+<td style="text-align: left;"><code>docker0</code></td>
+<td style="text-align: left;"><code>172.22.1.0/24</code> (Docker
+network)</td>
+<td style="text-align: left;">25, 587, 993, 443 (SOGo)</td>
+<td style="text-align: left;">Docker Compose standalone</td>
+</tr>
+</tbody>
+</table>
+<h3 id="flux-mermaid">Flux Mermaid</h3>
+<pre class="mermaid"><code>graph TD
+    User((Utilisateur)) --&gt;|HTTPS/443| UFW[UFW Firewall]
+    UFW --&gt; CS[CrowdSec IDS]
+    CS --&gt; Traefik[Traefik Ingress]
+    
+    subgraph &quot;VPS Core-Prod (K3s Master + Docker)&quot;
+        Traefik --&gt;|Auth Request| Authelia
+        Traefik --&gt;|Route| Mailcow[Mailcow - mail.cjenti.com]
+        Traefik --&gt;|Route| Nextcloud[Nextcloud - drive.cjenti.com]
+        Traefik --&gt;|Route| Ghost[Ghost - blog.uyoop.fr]
+    end
+    
+    subgraph &quot;gitlab.com (SaaS Free)&quot;
+        GitLabSaaS[GitLab.com Repos &amp; CI/CD]
+    end
+    
+    subgraph &quot;VPS AI-Lab (K3s Agent)&quot;
+        Runner[GitLab Runner]
+        SonarQube
+        Perplexica
+        Ollama[Ollama LLM]
+    end
+    
+    GitLabSaaS --&gt;|Tunnel WireGuard| Runner
+    Runner --&gt;|Pipeline| SonarQube
+    Nextcloud --&gt;|S3 Protocol| OVH_S3[(Object Storage)]
+    Mailcow --&gt;|Backup| OVH_S3
+    GitLabSaaS -.-&gt;|Mirror Git| VPSBackup[Backup Git Local]</code></pre>
+<div style="page-break-after: always;">
+
+</div>
+<!-- Inclusion du contenu 02 -->
+<h1 id="planning-de-migration">02. PLANNING DE MIGRATION</h1>
+<blockquote>
+<p><strong>Statut</strong> : V2 (6 Février 2026) — Intègre stratégie
+GitLab hybride, Mailcow Docker Compose, corrections
+<strong>Stratégie</strong> : “Continuité d’abord, Code ensuite”.
+<strong>Contexte de Travail</strong> : Projet mené en parallèle du
+stage. Charge de travail adaptée.</p>
+</blockquote>
+<hr />
+<h2 id="phase-1-opération-socle-immédiat---22-février">🔥 PHASE 1 :
+“OPÉRATION SOCLE” (Immédiat - 22 Février)</h2>
+<p><strong>Objectif Critique</strong> : Continuité de service Mail/Data
+avant expiration contrats. <strong>Plan B (Secours)</strong> : Si retard
+technique au 20/02, activation d’un mois de <strong>Proton
+Unlimited</strong> (12.99€) pour sécuriser les données sans
+pression.</p>
+<h3 id="semaine-06-infrastructure-as-code-init">Semaine 06
+(Infrastructure as Code Init)</h3>
+<ul class="task-list">
+<li><label><input type="checkbox" /><strong>Repo</strong> : Création du
+dépôt principal sur <strong>gitlab.com</strong> (Free Tier). Structure :
+<code>ansible/</code>, <code>k8s-manifests/</code>,
+<code>docker/</code>, <code>docs/</code>.</label></li>
+<li><label><input type="checkbox" /><strong>Souscription</strong> :
+Commande VPS Core-Prod (OVH) et domaines.</label></li>
+<li><label><input type="checkbox" /><strong>Provisioning</strong> :
+Création des rôles <strong>Ansible</strong> de base
+(<code>common</code>, <code>security</code>, <code>docker</code>,
+<code>k3s</code>).</label>
+<ul>
+<li><em>Sécurité</em> : Installation auto de <strong>UFW</strong> +
+<strong>CrowdSec</strong> + SSH Hardening.</li>
+</ul></li>
+</ul>
+<h3 id="semaine-07-services-vitaux">Semaine 07 (Services Vitaux)</h3>
+<ul class="task-list">
+<li><label><input type="checkbox" /><strong>Cluster</strong> :
+Déploiement K3s via Ansible (Rôle
+<code>k3s-ansible</code>).</label></li>
+<li><label><input type="checkbox" /><strong>Mail</strong> : Déploiement
+Mailcow (<strong>Docker Compose standalone</strong> — seul mode supporté
+officiellement).</label>
+<ul>
+<li><em>Test</em> : Validation Score SpamCheck (SPF/DKIM/DMARC).</li>
+</ul></li>
+<li><label><input type="checkbox" /><strong>Data</strong> : Déploiement
+Nextcloud (K3s).</label>
+<ul>
+<li><em>Migration</em> : Upload manuel des 24 Go critiques.</li>
+</ul></li>
+<li><label><input type="checkbox" /><strong>Mirror Git</strong> : Cron
+<code>git clone --mirror</code> de gitlab.com vers VPS-3 (réversibilité
+souveraine).</label></li>
+<li><label><input type="checkbox" /><strong>Bascule</strong> :
+Changement DNS MX <code>cjenti.com</code> (mail perso) (Target :
+21/02).</label></li>
+</ul>
+<hr />
+<h2 id="phase-2-lusine-logicielle-mars---avril">🛠️ PHASE 2 : “L’USINE
+LOGICIELLE” (Mars - Avril)</h2>
+<p><strong>Objectif Titre</strong> : Industrialisation et Sécurité
+(DevSecOps).</p>
+<h3 id="mars-identité-web">Mars : Identité &amp; Web</h3>
+<ul class="task-list">
+<li><label><input type="checkbox" /><strong>Migration Web</strong> :
+Transfert domaines O2Switch -&gt; OVH
+(<code>uyoop.fr</code>/<code>.com</code> pro +
+<code>cjenti.fr</code>/<code>.com</code> perso).</label></li>
+<li><label><input type="checkbox" /><strong>SSO</strong> : Déploiement
+<strong>Authelia</strong> (LDAP Mailcow backend).</label></li>
+<li><label><input type="checkbox" /><strong>CMS</strong> : Ghost Blog
+paramétré avec accès SSO.</label></li>
+<li><label><input type="checkbox" /><strong>Maintenance</strong> :
+Activation de <strong>Renovate Bot</strong> pour suivi des mises à
+jour.</label></li>
+</ul>
+<h3 id="avril-ia-qualité-extension-ai-lab">Avril : IA &amp; Qualité
+(Extension “AI-Lab”)</h3>
+<ul class="task-list">
+<li><label><input type="checkbox" /><strong>Infra</strong> :
+Provisioning VPS-2 (6 vCores / 12 Go RAM / 100 Go NVMe) via Ansible
+Playbook réutilisé.</label></li>
+<li><label><input type="checkbox" /><strong>Réseau</strong> :
+Configuration Tunnel WireGuard Mesh entre les nœuds (MTU 1420,
+PersistentKeepalive=25).</label></li>
+<li><label><input type="checkbox" /><strong>CI/CD</strong> :
+<strong>GitLab Runner</strong> self-hosted installé sur VPS-2,
+enregistré sur gitlab.com.</label></li>
+<li><label><input type="checkbox" /><strong>Qualité</strong> : SonarQube
+avec Quality Gate stricte, intégré au pipeline gitlab.com.</label></li>
+<li><label><input type="checkbox" /><strong>Monitoring</strong> :
+Déploiement <strong>Prometheus</strong> + <strong>Grafana</strong> +
+<strong>AlertManager</strong> (namespace <code>monitoring</code>).
+Alertes Discord/Mail sur CPU, RAM, disque, certificats.</label></li>
+<li><label><input type="checkbox" /><strong>Secrets</strong> :
+Déploiement <strong>Sealed Secrets</strong> (Bitnami) pour chiffrer les
+secrets dans Git.</label></li>
+</ul>
+<hr />
+<h2 id="phase-3-consolidation-résilience-mai---juin">🚀 PHASE 3 :
+“CONSOLIDATION &amp; RÉSILIENCE” (Mai - Juin)</h2>
+<p><strong>Objectif Certification</strong> : Preuves de robustesse et
+Documentation finale.</p>
+<h3 id="mai-big-data-finops">Mai : Big Data &amp; FinOps</h3>
+<ul class="task-list">
+<li><label><input type="checkbox" /><strong>Storage</strong> :
+Activation S3 Object Storage et règles de cycle de vie.</label></li>
+<li><label><input type="checkbox" /><strong>Archivage</strong> :
+Migration OneDrive -&gt; S3 (Rclone).</label></li>
+<li><label><input type="checkbox" /><strong>Observabilité</strong> :
+Dashboard Grafana “FinOps” (Coûts OVH API) + dashboards services
+(Mailcow, Nextcloud, K3s).</label></li>
+<li><label><input type="checkbox" /><strong>Vault</strong> : Déploiement
+<strong>HashiCorp Vault</strong> (secrets dynamiques runtime, rotation,
+injection sidecar). Complète Sealed Secrets.</label></li>
+</ul>
+<h3 id="juin-soutenance-drp">Juin : Soutenance &amp; DRP</h3>
+<ul class="task-list">
+<li><label><input type="checkbox" /><strong>Crash Test (DRP)</strong> :
+“Journée du Chaos”.</label>
+<ul>
+<li><em>Scénario</em> : Suppression volontaire du namespace
+<code>prod</code> et restauration depuis Backup S3.</li>
+<li><em>Preuve</em> : Vidéo du rétablissement pour la soutenance.</li>
+</ul></li>
+<li><label><input type="checkbox" /><strong>Livrable</strong> : Repo Git
+nettoyé et public (ou accès Jury).</label></li>
+</ul>
+<hr />
+<h2 id="phase-4-lancement-perspectives-juillet---septembre">🌐 PHASE 4 :
+“LANCEMENT &amp; PERSPECTIVES” (Juillet - Septembre)</h2>
+<p><strong>Objectif</strong> : Mise en ligne publique de la solution
+uyoop et démarrage de l’activité professionnelle.</p>
+<h3 id="fin-juin-pause">Fin Juin : Pause</h3>
+<ul class="task-list">
+<li><label><input type="checkbox" /><strong>Repos</strong> : Quelques
+jours de décompression post-certification.</label></li>
+</ul>
+<h3 id="juillet-août-finalisation-plateforme">Juillet-Août :
+Finalisation Plateforme</h3>
+<ul class="task-list">
+<li><label><input type="checkbox" /><strong>Hardening</strong> :
+Finalisation complète de l’infrastructure (sécurité, performance,
+contenus).</label></li>
+<li><label><input type="checkbox" /><strong>Produit</strong> : Mise en
+ligne de l’offre publique : <strong>vitrine consulting DevSecOps +
+produit technique</strong>.</label></li>
+<li><label><input type="checkbox" /><strong>Contenu</strong> : Rédaction
+d’articles blog Ghost (retours d’expérience, études de cas, veille
+sécurité).</label></li>
+<li><label><input type="checkbox" /><strong>Portfolio</strong> : Repos
+publics GitHub (mirror GitLab → GitHub) comme vitrine
+technique.</label></li>
+</ul>
+<h3 id="septembre-phase-daction-intensive">Septembre : Phase d’Action
+Intensive</h3>
+<p>Deux branches parallèles : * <strong>Branche A — CDI</strong> :
+Ciblage d’entreprises françaises dans les secteurs <strong>sécurité,
+souveraineté/défense, intelligence artificielle</strong>. La plateforme
+uyoop sert de portfolio vivant. * <strong>Branche B — Freelance</strong>
+: Consultant DevSecOps indépendant. Déploiement des compétences auprès
+de cibles sectorielles à définir. La plateforme uyoop sert de vitrine
+commerciale et d’outil de production.</p>
+<blockquote>
+<p><strong>Objectif fin août</strong> : Solution uyoop <strong>en ligne
+et accessible au grand public</strong> — vitrine + offre consulting +
+produit technique opérationnel.</p>
+</blockquote>
+<hr />
+<h2 id="calendrier-des-risques-mitigations">Calendrier des Risques &amp;
+Mitigations</h2>
+<table>
+<colgroup>
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Échéance</th>
+<th style="text-align: left;">Risque Identifié</th>
+<th style="text-align: left;">Impact</th>
+<th style="text-align: left;">Plan de Mitigation</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"><strong>21 Février</strong></td>
+<td style="text-align: left;">Migration Mail inachevée</td>
+<td style="text-align: left;">Perte de mails entrants</td>
+<td style="text-align: left;">Activation <strong>Proton Mensuel
+(12.99€)</strong> (Buffer).</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>15 Mars</strong></td>
+<td style="text-align: left;">Transferts Domaines bloqués</td>
+<td style="text-align: left;">Coupure Web</td>
+<td style="text-align: left;">Vérification codes EPP à J-30.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>Mai</strong></td>
+<td style="text-align: left;">Crash Disque VPS</td>
+<td style="text-align: left;">Perte Données</td>
+<td style="text-align: left;">Backups S3 quotidiens + Test de
+restauration (DRP).</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Soutenance</strong></td>
+<td style="text-align: left;">Panne “Effet Démo”</td>
+<td style="text-align: left;">Échec Présentation</td>
+<td style="text-align: left;">Environnement de secours ou Vidéo
+enregistrée.</td>
+</tr>
+</tbody>
+</table>
+<div style="page-break-after: always;">
+
+</div>
+<!-- Inclusion du contenu 03 -->
+<h1 id="analyse-finops">03. ANALYSE FINOPS</h1>
+<blockquote>
+<p><strong>Statut</strong> : V2 (6 Février 2026) — Coûts vérifiés OVH,
+budget annualisé, gamme VPS 2026 documentée <strong>Approche</strong> :
+Rationalisation des coûts par la maîtrise technologique. Passage d’un
+modèle OPEX SaaS (pay-per-user) à un modèle IaaS (pay-per-resource).</p>
+</blockquote>
+<h2 id="situation-initiale-2025---legacy">1. Situation Initiale (2025 -
+Legacy)</h2>
+<p>Coûts dispersés, dépendance forte aux éditeurs, aucun contrôle sur la
+localisation précise des données.</p>
+<table>
+<colgroup>
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Fournisseur</th>
+<th style="text-align: left;">Services Fournis</th>
+<th style="text-align: left;">Coût Annuel HT</th>
+<th style="text-align: left;">Mensuel TTC (Est.)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"><strong>Proton</strong></td>
+<td style="text-align: left;">Mail, VPN, Drive (Suisse)</td>
+<td style="text-align: left;">119.88 €</td>
+<td style="text-align: left;">~12.00 €</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Microsoft</strong></td>
+<td style="text-align: left;">Office 365, Exchange (US/EU)</td>
+<td style="text-align: left;">66.24 €</td>
+<td style="text-align: left;">~6.62 €</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>O2Switch</strong></td>
+<td style="text-align: left;">Hébergement mutualisé (France)</td>
+<td style="text-align: left;">84.00 €</td>
+<td style="text-align: left;">~8.40 €</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Registrars</strong></td>
+<td style="text-align: left;">Portfolio Noms de domaine (uyoop.fr/com
+pro + cjenti.fr/com perso)</td>
+<td style="text-align: left;">125.00 €</td>
+<td style="text-align: left;">~12.50 €</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>TOTAL</strong></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><strong>395.12 € HT</strong></td>
+<td style="text-align: left;"><strong>~39.52 € TTC</strong></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="infrastructure-cible-2026---souveraine">2. Infrastructure Cible
+(2026 - Souveraine)</h2>
+<p>Basée sur OVHcloud (Roubaix/Gravelines), facturation prévisible et
+évolutive.</p>
+<h3 id="coûts-fixes-infrastructure">Coûts Fixes (Infrastructure)</h3>
+<table>
+<colgroup>
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Ressource</th>
+<th style="text-align: left;">Rôle</th>
+<th style="text-align: left;">Coût Mensuel TTC</th>
+<th style="text-align: left;">Note</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"><strong>VPS-3</strong></td>
+<td style="text-align: left;">Nœud Core (Prod)</td>
+<td style="text-align: left;">14.28 €</td>
+<td style="text-align: left;">Base 2026 stable</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Domaines</strong></td>
+<td style="text-align: left;">Identité Numérique (uyoop.fr/com +
+cjenti.fr/com)</td>
+<td style="text-align: left;">~10.00 €</td>
+<td style="text-align: left;">Centralisés OVH</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>TOTAL IaaS</strong></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><strong>~24.28 €</strong></td>
+<td style="text-align: left;">Socle de base</td>
+</tr>
+</tbody>
+</table>
+<h3 id="coûts-variables-options-flexibilité">Coûts Variables &amp;
+Options (Flexibilité)</h3>
+<table>
+<colgroup>
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Ressource</th>
+<th style="text-align: left;">Type</th>
+<th style="text-align: left;">Coût</th>
+<th style="text-align: left;">Stratégie</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"><strong>VPS-2 (IA)</strong></td>
+<td style="text-align: left;">R&amp;D (6 vCores / 12 Go / 100 Go
+NVMe)</td>
+<td style="text-align: left;">~7.14 € TTC / mois</td>
+<td style="text-align: left;"><em>Optimisation</em> : Facturation
+horaire (Cloud) possible durant tests.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>S3 Object Storage</strong></td>
+<td style="text-align: left;">Backup &amp; Archives</td>
+<td style="text-align: left;">~0.01 €/Go/mois (One-Zone)</td>
+<td style="text-align: left;">Stockage froid chiffré. ~1-3 €/mois selon
+volume. Pas de frais API/trafic chez OVH.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>Backup Premium VPS</strong></td>
+<td style="text-align: left;">Sécurité</td>
+<td style="text-align: left;">3.96 € TTC/mois (optionnel)</td>
+<td style="text-align: left;">Sauvegarde 7 jours glissants. 1 jour
+inclus gratuitement dans la gamme 2026.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Risque Proton</strong></td>
+<td style="text-align: left;">Assurance</td>
+<td style="text-align: left;">12.99 € / mois</td>
+<td style="text-align: left;"><strong>Plan B</strong> : Abonnement
+mensuel si migration retardée (Budget “Sérénité”).</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p><strong>Note gamme VPS OVH 2026</strong> (engagement 12 mois) : VPS-1
+(4 vCores/8 Go/75 Go) = 4.58€ TTC | VPS-2 (6 vCores/12 Go/100 Go) =
+7.14€ TTC | <strong>VPS-3 (8 vCores/24 Go/200 Go) = 14.28€ TTC</strong>
+| VPS-4 (12 vCores/48 Go/300 Go) = 25.50€ TTC</p>
+</blockquote>
+<hr />
+<h2 id="synthèse-roi-valeur-ajoutée">3. Synthèse ROI &amp; Valeur
+Ajoutée</h2>
+<h3 id="gains-financiers">Gains Financiers</h3>
+<ul>
+<li><strong>Total Cible Optimisé</strong> : ~24.28 € / mois (VPS-3 +
+Domaines, hors IA).</li>
+<li><strong>Total Cible “Full Package”</strong> : ~32.42 € / mois (avec
+VPS IA + S3 permanent).</li>
+<li><strong>Budget Annuel Socle</strong> : 24.28 × 12 = <strong>291.36 €
+TTC/an</strong>.</li>
+<li><strong>Budget Annuel Full</strong> : 32.42 × 12 = <strong>389.04 €
+TTC/an</strong>.</li>
+<li><strong>Legacy 2025 annualisé TTC</strong> : 395.12 × 1.20 =
+<strong>474.14 € TTC/an</strong>.</li>
+<li><strong>Économie nette Full Package</strong> : 474.14 - 389.04 =
+<strong>~85 € TTC/an (18%)</strong> à périmètre fonctionnel
+<strong>largement supérieur</strong> (Puissance de calcul dédiée, IA,
+CI/CD).</li>
+<li><strong>Économie nette Socle seul</strong> : 474.14 - 291.36 =
+<strong>~183 € TTC/an (39%)</strong>.</li>
+</ul>
+<blockquote>
+<p><strong>Astuce FinOps</strong> : OVH propose <strong>200€ de crédit
+Public Cloud</strong> pour le premier projet. Utilisable pour tester
+l’Object Storage S3 et les AI Endpoints sans surcoût. ⚠️ <em>Offre
+promotionnelle, non garantie — ne pas intégrer dans le budget de
+base.</em></p>
+</blockquote>
+<h3 id="budget-worst-case-scénario-pessimiste">Budget “Worst Case”
+(Scénario Pessimiste)</h3>
+<p>Si tous les coûts variables et plans de secours sont activés
+simultanément :</p>
+<table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Poste</th>
+<th style="text-align: left;">Coût Mensuel TTC</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">VPS-3 + VPS-2 + Domaines + S3 + Backup
+Premium + Proton</td>
+<td style="text-align: left;"><strong>~49.37 €</strong></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Annualisé</strong></td>
+<td style="text-align: left;"><strong>~592 € TTC/an</strong></td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>Scénario temporaire (1-2 mois max pendant migration). Dès migration
+terminée, retour en zone “Full Package”.</p>
+</blockquote>
+<h3 id="coût-one-shot-transfert-domaines">Coût One-Shot : Transfert
+Domaines</h3>
+<div class="line-block">4 NDD (uyoop.fr/com + cjenti.fr/com) |
+<strong>~34 €</strong> (renouvellement anticipé 1 an inclus) |</div>
+<h3 id="valeur-métier-intangible">Valeur Métier (Intangible)</h3>
+<p>Cette transition génère une valeur inestimable pour le profil
+professionnel : 1. <strong>Souveraineté</strong> : Données 100%
+hébergées en France, code auditable. 2. <strong>Compétence</strong> :
+Preuve technique d’un savoir-faire “Architecte Cloud” et culture FinOps.
+3. <strong>Innovation</strong> : Capacité à intégrer des LLM privés sans
+surcoût de licence (ex: Copilot à 19$/mois économisé).</p>
+<p><img
+src="https://quickchart.io/chart?c=%7Btype:&#39;bar&#39;,data:%7Blabels:%5B&#39;Legacy_2025_(474€/an)&#39;,&#39;Cible_Socle_(291€/an)&#39;,&#39;Cible_Full+IA_(389€/an)&#39;%5D,datasets:%5B%7Blabel:&#39;Coût_Mensuel_TTC&#39;,data:%5B39.52,24.28,32.42%5D%7D%5D%7D%7D"
+alt="Graphique ROI" /> <em>(Graphique généré automatiquement pour
+illustration FinOps)</em></p>
+<div style="page-break-after: always;">
+
+</div>
+<!-- Inclusion du contenu 04 -->
+<h1 id="perspectives-i.a.">04. PERSPECTIVES I.A.</h1>
+<blockquote>
+<p><strong>Vision</strong> : Transformer une infrastructure
+d’hébergement classique en une plateforme intelligente d’assistance aux
+opérations.</p>
+</blockquote>
+<h2 id="pourquoi-lia-dans-ce-projet">1. Pourquoi l’IA dans ce projet
+?</h2>
+<p>Dans une démarche <strong>“Stratégie à votre image”</strong>, l’IA ne
+doit pas être une boîte noire externe (ChatGPT/Copilot SaaS) qui ingère
+nos données sensibles. Elle doit être un composant interne de
+l’infrastructure (<code>ai-node</code>), capable de comprendre le
+contexte métier (Documentation, Code propriétaire) sans fuite de
+données.</p>
+<h2 id="cas-dusage-implémentés-phase-2">2. Cas d’Usage Implémentés
+(Phase 2)</h2>
+<h3 id="a.-moteur-de-recherche-documentaire-rag">A. Moteur de Recherche
+Documentaire (RAG)</h3>
+<p><strong>Problème</strong> : La documentation technique est dispersée
+(Markdown GitLab, Docs Nextcloud, Notes). <strong>Solution</strong> :
+<strong>Perplexica</strong> (ou équivalent Open Source). *
+<strong>Fonctionnement</strong> : Indexation vectorielle des dépôts
+GitLab et des documents Nextcloud. * <strong>Usage</strong> : Interface
+“Chat” permettant de poser des questions en langage naturel :
+<em>“Quelle est la procédure de rotation des clés SSH ?”</em> ou
+<em>“Résume l’architecture réseau du namespace prod”</em>. *
+<strong>Souveraineté</strong> : L’index reste local. Aucune donnée ne
+part chez OpenAI.</p>
+<h3 id="b.-analyse-statique-augmentée-sast">B. Analyse Statique
+Augmentée (SAST)</h3>
+<p><strong>Problème</strong> : Détecter les vulnérabilités dans le code
+avant déploiement. <strong>Solution</strong> : <strong>SonarQube +
+Plugins IA</strong>. * <strong>Pipeline</strong> : À chaque
+<code>git push</code> sur gitlab.com, le Runner self-hosted sur VPS-2
+déclenche l’analyse. * <strong>Apport IA</strong> : Détection de
+patterns complexes, suggestions de refactoring et explication des
+failles de sécurité aux développeurs juniors.</p>
+<h2 id="architecture-logique-du-nœud-ia">3. Architecture Logique du Nœud
+IA</h2>
+<p>Le VPS-2 (6 vCores / 12 Go RAM / 100 Go NVMe) est configuré comme un
+“Worker” spécialisé.</p>
+<table>
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Couche</th>
+<th style="text-align: left;">Technologie</th>
+<th style="text-align: left;">Rôle</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"><strong>Interface</strong></td>
+<td style="text-align: left;">UI Web / API</td>
+<td style="text-align: left;">Point d’entrée pour l’utilisateur et les
+webhooks</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Cerveau</strong></td>
+<td style="text-align: left;"><strong>Ollama</strong></td>
+<td style="text-align: left;">Exécution des modèles (LLM) optimisés (ex:
+Mistral-7B, Llama3)</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>Mémoire</strong></td>
+<td style="text-align: left;"><strong>Qdrant</strong></td>
+<td style="text-align: left;">Base de données vectorielle pour le
+contexte (RAG)</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Calcul</strong></td>
+<td style="text-align: left;">CPU (AVX2)</td>
+<td style="text-align: left;">Inférence sur CPU (Pas de GPU, modèles
+quantifiés Q4_K_M)</td>
+</tr>
+</tbody>
+</table>
+<h2 id="futur-vers-lauto-remédiation">4. Futur : Vers l’Auto-Remédiation
+?</h2>
+<p>À terme (Post-Stage), l’objectif est de coupler le monitoring
+(AlertManager) à l’IA pour proposer des diagnostics automatiques en cas
+d’incident : * <em>Alerte</em> : “Disk Usage High on /var/lib/docker”. *
+<em>IA</em> : “Analyse : Logs conteneur Mailcow anormalement volumineux.
+Suggestion : <code>docker system prune</code> ou rotation logs.”</p>
+<div style="page-break-after: always;">
+
+</div>
+<!-- Inclusion du contenu 05 -->
+<h1 id="référentiel-de-compétences">05. RÉFÉRENTIEL DE COMPÉTENCES</h1>
+<blockquote>
+<p><strong>Titre visé</strong> : Administrateur Systèmes DevOps (RNCP
+36061). <strong>Objectif</strong> : Ce chapitre démontre la couverture
+des blocs de compétences du titre par les réalisations concrètes du
+projet uyoopVPS.</p>
+</blockquote>
+<hr />
+<h2
+id="bloc-1-automatiser-le-déploiement-dune-infrastructure-rncp36061bc01">Bloc
+1 : Automatiser le déploiement d’une infrastructure (RNCP36061BC01)</h2>
+<table>
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Compétence Référentiel</th>
+<th style="text-align: left;">Réalisation Concrète Projet uyoop</th>
+<th style="text-align: left;">Livrable Dossier</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"><strong>Automatiser la création de
+serveurs</strong></td>
+<td style="text-align: left;">Provisioning des VPS (Core &amp; AI) via
+scripts de bootstrap (Cloud-init / Bash). Configuration initiale
+automatisée.</td>
+<td style="text-align: left;">Scripts de setup (<code>setup.sh</code>),
+configuration SSH/User.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Automatiser le
+déploiement</strong></td>
+<td style="text-align: left;">Utilisation de l’approche
+<strong>GitOps</strong> : pipelines <strong>GitLab CI/CD</strong>
+(gitlab.com SaaS + Runner self-hosted) et <strong>Helm Charts</strong>
+pour déployer K3s, Mailcow (Docker Compose), Nextcloud. L’état désiré
+est défini dans le code.</td>
+<td style="text-align: left;">Dépôt Git d’Infrastructure, Manifests
+Kubernetes, <code>.gitlab-ci.yml</code>.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>Sécuriser
+l’infrastructure</strong></td>
+<td style="text-align: left;">Architecture <strong>Zero-Trust</strong>.
+Mise en place de <strong>Authelia</strong> (2FA/SSO), <strong>Sealed
+Secrets</strong> (chiffrement Git-safe) + <strong>HashiCorp
+Vault</strong> (secrets dynamiques runtime),
+<strong>NetworkPolicies</strong> (Isolation Namespaces), et durcissement
+OS (<strong>UFW</strong> Firewall + <strong>CrowdSec</strong> IDS).</td>
+<td style="text-align: left;">Chap. 01 (Architecture), config Firewall,
+Politiques K8s, Policy Vault.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Mettre en prod. dans le
+cloud</strong></td>
+<td style="text-align: left;">Gestion de l’exposition Internet via
+<strong>Traefik</strong> (Ingress Controller), gestion DNS (OVH) et
+certificats TLS auto (Cert-Manager / Let’s Encrypt). Approche
+<strong>hybride</strong> : SaaS (gitlab.com) + IaaS (OVH VPS). Stratégie
+multi-domaines : <code>uyoop.fr/com</code> (pro) +
+<code>cjenti.fr/com</code> (perso).</td>
+<td style="text-align: left;">URL accessibles
+(<code>mail.cjenti.com</code>, <code>blog.uyoop.fr</code>, etc),
+Dashboards Traefik.</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="bloc-2-déployer-en-continu-une-application-rncp36061bc02">Bloc 2
+: Déployer en continu une application (RNCP36061BC02)</h2>
+<table>
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Compétence Référentiel</th>
+<th style="text-align: left;">Réalisation Concrète Projet uyoop</th>
+<th style="text-align: left;">Livrable Dossier</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"><strong>Préparer environn. de
+test</strong></td>
+<td style="text-align: left;">Création d’un namespace dédié
+<code>dev-lab</code> ou utilisation du VPS-2 (AI-Lab) pour valider les
+mises à jour avant la prod.</td>
+<td style="text-align: left;">Configuration Namespaces K8s, Scénarios de
+test.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Gérer le stockage des
+données</strong></td>
+<td style="text-align: left;">Implémentation d’une stratégie de stockage
+hybride : <strong>PV/PVC Kubernetes</strong> (local-path-provisioner)
+sur NVMe + <strong>Object Storage S3</strong> pour les archives.</td>
+<td style="text-align: left;">Chap. 01 (Stratégie Données), Config
+StorageClasses.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>Gérer des containers</strong></td>
+<td style="text-align: left;">Conteneurisation de tous les services
+(Mailcow en Docker Compose, Nextcloud/Ghost/Authelia en K3s). Gestion
+des images Docker et Registre privé (gitlab.com Container
+Registry).</td>
+<td style="text-align: left;"><code>docker-compose.yml</code>, Pods K8s,
+Dockerfiles.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Automatiser la mise en
+prod</strong></td>
+<td style="text-align: left;">Mise en place de pipelines <strong>GitLab
+CI/CD</strong> (gitlab.com SaaS + Runner self-hosted sur VPS-2) : Build,
+Scan de sécurité (Trivy/Sonar), Déploiement auto sur Cluster K3s.
+Démontre la compétence “infra hybride” (SaaS + On-premise).</td>
+<td style="text-align: left;">Fichiers <code>.gitlab-ci.yml</code>,
+Rapport de scan SonarQube.</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="bloc-3-superviser-les-services-déployés-rncp36061bc03">Bloc 3 :
+Superviser les services déployés (RNCP36061BC03)</h2>
+<table>
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Compétence Référentiel</th>
+<th style="text-align: left;">Réalisation Concrète Projet uyoop</th>
+<th style="text-align: left;">Livrable Dossier</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"><strong>Définir statistiques
+services</strong></td>
+<td style="text-align: left;">Identification des indicateurs clés (KPI)
+: Disponibilité Web, Espace Disque (Alerte NVMe), Charge CPU (notamment
+sur Node IA).</td>
+<td style="text-align: left;">Liste des métriques surveillées, SLA
+définis.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Exploiter solution
+supervision</strong></td>
+<td style="text-align: left;">Déploiement de la stack d’observabilité :
+<strong>Prometheus</strong> (Collecte), <strong>Grafana</strong>
+(Visualisation), <strong>AlertManager</strong> (Notifications
+Discord/Mail).</td>
+<td style="text-align: left;">Screenshots Dashboards Grafana, Exemples
+d’alertes.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>Echanger en anglais</strong></td>
+<td style="text-align: left;">La totalité de la documentation technique
+du code (Commentaires, Commits Git) et la veille technologique sont
+réalisées en anglais international.</td>
+<td style="text-align: left;">Commits Git, README techniques des
+repos.</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="synthèse-de-la-couverture">Synthèse de la Couverture</h2>
+<p>Le projet uyoopVPS couvre <strong>100% des compétences
+techniques</strong> du titre. Il dépasse le cadre standard par
+l’intégration d’une dimension <strong>DevSecOps</strong> (Sécurité
+avancée) et <strong>AIOps</strong> (Intégration Intelligence
+Artificielle), ainsi qu’une approche <strong>FinOps pragmatique</strong>
+(hybride SaaS/IaaS raisonnée), apportant une valeur ajoutée distinctive
+présentée au Jury.</p>
+<p><br> <br></p>
+<table style="width:6%;">
+<colgroup>
+<col style="width: 5%" />
+</colgroup>
+<tbody>
+<tr class="odd">
+<td><em>Fin du Dossier Technique - uyoop 2026</em></td>
+</tr>
+<tr class="even">
+<td></td>
+</tr>
+<tr class="odd">
+<td><!-- Inclusion du contenu 06 --> # 06. PLAN DE REPRISE &amp;
+CONTINUITÉ D’ACTIVITÉ (PRA/PCA)</td>
+</tr>
+<tr class="even">
+<td>&gt; <strong>Statut</strong> : V2 (6 Février 2026) &gt;
+<strong>Objectif</strong> : Formaliser les procédures de résilience, les
+objectifs de reprise et les scénarios de sinistre.</td>
+</tr>
+<tr class="odd">
+<td>## 1. Objectifs de Reprise</td>
+</tr>
+<tr class="even">
+<td>| Indicateur | Cible | Justification | | :— | :— | :— | |
+<strong>RPO</strong> (Recovery Point Objective) | <strong>&lt;
+24h</strong> | Backup S3 quotidien (Restic/Velero). Perte max = dernière
+sauvegarde nocturne. | | <strong>RTO</strong> (Recovery Time Objective)
+| <strong>&lt; 4h</strong> | Re-provisioning Ansible + restauration
+Restic depuis S3. Testé via DRP. | | <strong>MTTR</strong> (Mean Time To
+Repair) | <strong>&lt; 2h</strong> (services critiques) | Mailcow +
+Nextcloud prioritaires. Ghost/SonarQube restaurés en second. |</td>
+</tr>
+<tr class="odd">
+<td>## 2. Classification des Services (Criticité)</td>
+</tr>
+<tr class="even">
+<td>| Service | Criticité | RPO | RTO | | :— | :— | :— | :— | |
+<strong>Mailcow</strong> (mail.cjenti.com) | 🔴 Critique | &lt; 24h |
+&lt; 2h | | <strong>Nextcloud</strong> (drive.cjenti.com) | 🔴 Critique
+| &lt; 24h | &lt; 2h | | <strong>Ghost</strong> (blog.uyoop.fr) | 🟡
+Important | &lt; 24h | &lt; 4h | | <strong>Authelia</strong> | 🟡
+Important | &lt; 24h | &lt; 2h | | <strong>GitLab</strong> (gitlab.com
+SaaS) | 🟢 Faible | N/A | N/A | | <strong>SonarQube /
+Perplexica</strong> (VPS-2) | 🟢 Faible | &lt; 7j | &lt; 1j |</td>
+</tr>
+<tr class="odd">
+<td>## 3. Stratégie de Sauvegarde (Règle 3-2-1)</td>
+</tr>
+<tr class="even">
+<td>| Donnée | Outil | Fréquence | Rétention | Destination | | :— | :— |
+:— | :— | :— | | <strong>Mailcow</strong> | <code>restic</code> + cron |
+Quotidien 03h00 | 30 jours | S3 OVH (Object Lock) | |
+<strong>Nextcloud</strong> | <code>restic</code> +
+<code>mysqldump</code> | Quotidien 03h30 | 30 jours | S3 OVH (Object
+Lock) | | <strong>Ghost</strong> | <code>restic</code> +
+<code>mysqldump</code> | Quotidien 04h00 | 14 jours | S3 OVH | |
+<strong>K3s etcd</strong> | <code>k3s etcd-snapshot</code> + Git |
+Quotidien 02h00 | 14 jours | S3 + gitlab.com | | <strong>Configs
+système</strong> | Ansible playbooks (Git) | À chaque commit | Infini |
+gitlab.com + GitHub mirror | | <strong>Snapshot VPS</strong> | OVH
+(1/jour inclus gamme 2026) | Auto | 1 ou 7 jours | OVH infra |</td>
+</tr>
+<tr class="odd">
+<td>## 4. Test DRP : “Journée du Chaos” (Juin 2026)</td>
+</tr>
+<tr class="even">
+<td>Protocole : suppression namespace <code>prod</code> + arrêt Mailcow
+→ restauration complète chronométrée depuis backups S3. Livrable : vidéo
+screen-capture + rapport (temps réel vs RTO cible).</td>
+</tr>
+<tr class="odd">
+<td>&gt; <em>Détail complet des procédures : voir
+<code>06-PRA-PCA.md</code>.</em></td>
+</tr>
+</tbody>
+</table>
+<p><em>Fin du Dossier Complet - uyoop 2026</em></p>
+</body>
+</html>
