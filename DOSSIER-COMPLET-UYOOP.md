@@ -4,8 +4,9 @@
 
 ![Logo Uyoop](SetUpUyoop.png)
 
-## "Une stratégie à votre image."
-### *Architecture DevSecOps à l'image de vos exigences.*
+## 1. Vision Technique & Slogan
+**uyoop : Une stratégie à votre image.**
+### *Souveraineté. Sécurité. Intelligence Artificielle.*
 
 ---
 
@@ -37,10 +38,14 @@ Ce projet, mené en parallèle des missions de stage, sert de terrain d'applicat
 
 *   **01. ARCHITECTURE** : Choix des technologies (K3s, Traefik, Ansible), Topologie, Sécurité Collaborative.
 *   **02. PLANNING** : Roadmap de migration, stratégie de continuité (Plan B), perspectives post-certification.
-*   **03. FINOPS** : Analyse des coûts, ROI et Budget Sérénité.
-*   **04. PERSPECTIVES I.A.** : L'innovation au service de l'exploitation.
-*   **05. RÉFÉRENTIEL DE COMPÉTENCES** : Tableau de correspondance avec le titre RNCP 36061.
-*   **06. PRA/PCA** : Plan de Reprise & Continuité d'Activité (RPO/RTO, scénarios, procédures).
+*   **03. DEVOPS** : Stratégie CI/CD, GitFlow, Infrastructure as Code.
+*   **04. SECOPS** : Sécurité Zero-Trust, Réponse à Incident, Gestion des Secrets.
+*   **05. AIOPS** : Intelligence Artificielle locale (Ollama/Open WebUI) et Agents autonomes.
+*   **06. FINOPS** : Analyse des coûts, ROI et économies SaaS.
+*   **07. BIZOPS** : Gestion d'entreprise (Dolibarr) et Marketing Automation (Mautic).
+*   **08. UHUB** : Intégration du portail DevSecAiOps (Stratégie Plug-In).
+*   **98. PRA/PCA** : Plan de Reprise & Continuité d'Activité.
+*   **99. RÉFÉRENTIEL** : Tableau de correspondance RNCP 36061.
 
 <div style="page-break-after: always;"></div>
 
@@ -84,7 +89,7 @@ Pour garantir la sécurité (isolation) et la performance (IA), l'architecture r
 *   **Infrastructure** : OVH **VPS-2** (6 vCores / 12 Go RAM / 100 Go NVMe).
 *   **Rôle** : R&D, Intelligence Artificielle, Analyse de Code, GitLab Runner self-hosted.
 *   **Charge** : Variable (Burstable), traitements lourds.
-*   **Services** : GitLab Runner (connecté à gitlab.com), LLM Local ou Gateway API, SonarQube (Quality Gate), Perplexica (Search).
+*   **Services** : GitLab Runner (connecté à gitlab.com), LLM Local (Ollama), SonarQube (Quality Gate), Open WebUI (Interface IA).
 
 > **Stratégie Noms de Domaine** :
 > *   `uyoop.fr` / `uyoop.com` — **Professionnel** : Vitrine, services métier, identité entreprise (`blog.uyoop.fr`, `git.uyoop.fr`).
@@ -118,6 +123,7 @@ Toute l'infrastructure est définie par le code (GitOps).
 | **Nextcloud** | Hub Collaboratif (Fichiers, Cal, Contacts) | `prod-cloud` | Mixte (Cache NVMe / Data S3) |
 | **GitLab** | Forge Logicielle & CI/CD (SaaS gitlab.com Phase 1-2, self-hosted optionnel Phase 3+) | `devops-factory` | gitlab.com (SaaS) + S3 (Artifacts) |
 | **Ghost** | CMS Vitrine & LMS | `prod-web` | NVMe |
+| **Mautic** | Marketing Automation & Emailing (vs Brevo) | `prod-marketing` (ou Docker) | MariaDB + NVMe |
 | **Authelia** | Fournisseur d'Identité (SSO, OIDC, 2FA) | `security` | Redis (Session) |
 
 ### C. Sécurité "Defense-In-Depth"
@@ -191,7 +197,7 @@ graph TD
     subgraph "VPS AI-Lab (K3s Agent)"
         Runner[GitLab Runner]
         SonarQube
-        Perplexica
+        OpenWebUI
         Ollama[Ollama LLM]
     end
     
@@ -213,12 +219,12 @@ graph TD
 
 ---
 
-## 🔥 PHASE 1 : "OPÉRATION SOCLE" (Immédiat - 22 Février)
-**Objectif Critique** : Continuité de service Mail/Data avant expiration contrats.
-**Plan B (Secours)** : Si retard technique au 20/02, activation d'un mois de **Proton Unlimited** (12.99€) pour sécuriser les données sans pression.
+## 🔥 PHASE 1 : "OPÉRATION SOCLE" (Immédiat - 25 Mars)
+**Objectif Critique** : Continuité de service Mail/Data avant expiration hébergement o2switch (25/03).
+**Note** : Sauvegarde Proton déjà sécurisée (domaines supprimés sans conséquence). Focus total sur la migration.
 
 ### Semaine 06 (Infrastructure as Code Init)
-*   [ ] **Repo** : Création du dépôt principal sur **gitlab.com** (Free Tier). Structure : `ansible/`, `k8s-manifests/`, `docker/`, `docs/`.
+*   [x] **Repo** : Création du dépôt principal sur **gitlab.com** (Free Tier). Structure : `ansible/`, `k8s-manifests/`, `docker/`, `docs/`.
 *   [ ] **Souscription** : Commande VPS Core-Prod (OVH) et domaines.
 *   [ ] **Provisioning** : Création des rôles **Ansible** de base (`common`, `security`, `docker`, `k3s`).
     *   *Sécurité* : Installation auto de **UFW** + **CrowdSec** + SSH Hardening.
@@ -230,7 +236,7 @@ graph TD
 *   [ ] **Data** : Déploiement Nextcloud (K3s).
     *   *Migration* : Upload manuel des 24 Go critiques.
 *   [ ] **Mirror Git** : Cron `git clone --mirror` de gitlab.com vers VPS-3 (réversibilité souveraine).
-*   [ ] **Bascule** : Changement DNS MX `cjenti.com` (mail perso) (Target : 21/02).
+*   [ ] **Bascule** : Changement DNS MX `cjenti.com` (mail perso) (Target : 15/03).
 
 ---
 
@@ -391,12 +397,14 @@ Dans une démarche **"Stratégie à votre image"**, l'IA ne doit pas être une b
 
 ## 2. Cas d'Usage Implémentés (Phase 2)
 
-### A. Moteur de Recherche Documentaire (RAG)
-**Problème** : La documentation technique est dispersée (Markdown GitLab, Docs Nextcloud, Notes).
-**Solution** : **Perplexica** (ou équivalent Open Source).
-*   **Fonctionnement** : Indexation vectorielle des dépôts GitLab et des documents Nextcloud.
-*   **Usage** : Interface "Chat" permettant de poser des questions en langage naturel : *"Quelle est la procédure de rotation des clés SSH ?"* ou *"Résume l'architecture réseau du namespace prod"*.
-*   **Souveraineté** : L'index reste local. Aucune donnée ne part chez OpenAI.
+### A. Assistants IA Souverains (Chat & RAG)
+**Problème** : La documentation technique est dispersée et l'accès à l'IA (ChatGPT) pose des problèmes de confidentialité.
+**Solution** : **Open WebUI** (Interface) + **Ollama** (Moteur Local).
+*   **Fonctionnement** : Interface web type "ChatGPT" connectée aux modèles locaux (Mistral, Llama 3) et à une base vectorielle (RAG).
+*   **Usage** :
+    *   *Chat* : Assistance générique (bash, python, configs).
+    *   *RAG (Retrieval Augmented Generation)* : "Discutez avec vos docs". Indexation du dépôt Git pour réponses contextuelles.
+*   **Souveraineté** : Tout tourne sur le VPS-2. Aucune donnée ne sort.
 
 ### B. Analyse Statique Augmentée (SAST)
 **Problème** : Détecter les vulnérabilités dans le code avant déploiement.
@@ -409,15 +417,24 @@ Le VPS-2 (6 vCores / 12 Go RAM / 100 Go NVMe) est configuré comme un "Worker" s
 
 | Couche | Technologie | Rôle |
 | :--- | :--- | :--- |
-| **Interface** | UI Web / API | Point d'entrée pour l'utilisateur et les webhooks |
+| **Interface** | **Open WebUI** | UI Web multi-utilisateurs, gestion RAG, historique |
 | **Cerveau** | **Ollama** | Exécution des modèles (LLM) optimisés (ex: Mistral-7B, Llama3) |
-| **Mémoire** | **Qdrant** | Base de données vectorielle pour le contexte (RAG) |
+| **Mémoire** | **Qdrant / ChromaDB** | Base de données vectorielle pour le contexte (RAG) |
 | **Calcul** | CPU (AVX2) | Inférence sur CPU (Pas de GPU, modèles quantifiés Q4_K_M) |
 
-## 4. Futur : Vers l'Auto-Remédiation ?
-À terme (Post-Stage), l'objectif est de coupler le monitoring (AlertManager) à l'IA pour proposer des diagnostics automatiques en cas d'incident :
-*   *Alerte* : "Disk Usage High on /var/lib/docker".
-*   *IA* : "Analyse : Logs conteneur Mailcow anormalement volumineux. Suggestion : `docker system prune` ou rotation logs."
+### 4. Agents Spécialisés "DevSecAiOps"
+L'objectif est de déployer des agents autonomes pour des tâches spécifiques :
+
+1.  **Agent "Log Sentinel"** :
+    *   *Rôle* : Analyse des logs suspects que CrowdSec ne bloque pas (comportemental complexe).
+    *   *Stack* : Script Python + Ollama. Analyse des patterns d'erreurs et suggestion de règles de filtrage.
+
+2.  **Agent "Code Reviewer"** :
+    *   *Rôle* : Relecture de code avant merge.
+    *   *Stack* : GitLab CI + Script d'appel API Ollama. Commente les Merge Requests avec suggestions.
+
+3.  **Agent "FinOps Advisor"** (Phase 3) :
+    *   *Rôle* : Analyse des factures API et usage ressources pour proposer des downsizes.
 
 <div style="page-break-after: always;"></div>
 

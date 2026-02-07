@@ -86,6 +86,7 @@ Cette transition génère une valeur inestimable pour le profil professionnel :
 1.  **Souveraineté** : Données 100% hébergées en France, code auditable.
 2.  **Compétence** : Preuve technique d'un savoir-faire "Architecte Cloud" et culture FinOps.
 3.  **Innovation** : Capacité à intégrer des LLM privés sans surcoût de licence (ex: Copilot à 19$/mois économisé).
+4.  **BizOps Economie** : L'auto-hébergement de **Dolibarr** + **Mautic** économise environ **50€/mois** de licences SaaS (type Quickbooks + Brevo).
 
-![Graphique ROI](https://quickchart.io/chart?c={type:'bar',data:{labels:['Legacy_2025_(474€/an)','Cible_Socle_(291€/an)','Cible_Full+IA_(389€/an)'],datasets:[{label:'Coût_Mensuel_TTC',data:[39.52,24.28,32.42]}]}})
+![Graphique ROI](https://quickchart.io/chart?c={type:'bar',data:{labels:['Legacy_2025_(47€)','Cible_SaaS_(90€)','Cible_uyoop_(24€)'],datasets:[{label:'Coût_Mensuel_TTC',data:[39.52,90.00,24.28]}]}})
 *(Graphique généré automatiquement pour illustration FinOps)*

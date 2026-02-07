@@ -6,12 +6,12 @@
 
 ---
 
-## 🔥 PHASE 1 : "OPÉRATION SOCLE" (Immédiat - 22 Février)
-**Objectif Critique** : Continuité de service Mail/Data avant expiration contrats.
-**Plan B (Secours)** : Si retard technique au 20/02, activation d'un mois de **Proton Unlimited** (12.99€) pour sécuriser les données sans pression.
+## 🔥 PHASE 1 : "OPÉRATION SOCLE" (Immédiat - 25 Mars)
+**Objectif Critique** : Continuité de service Mail/Data avant expiration hébergement o2switch (25/03).
+**Note** : Sauvegarde Proton déjà sécurisée (domaines supprimés sans conséquence). Focus total sur la migration.
 
 ### Semaine 06 (Infrastructure as Code Init)
-*   [ ] **Repo** : Création du dépôt principal sur **gitlab.com** (Free Tier). Structure : `ansible/`, `k8s-manifests/`, `docker/`, `docs/`.
+*   [x] **Repo** : Création du dépôt principal sur **gitlab.com** (Free Tier). Structure : `ansible/`, `k8s-manifests/`, `docker/`, `docs/`.
 *   [ ] **Souscription** : Commande VPS Core-Prod (OVH) et domaines.
 *   [ ] **Provisioning** : Création des rôles **Ansible** de base (`common`, `security`, `docker`, `k3s`).
     *   *Sécurité* : Installation auto de **UFW** + **CrowdSec** + SSH Hardening.
@@ -23,7 +23,9 @@
 *   [ ] **Data** : Déploiement Nextcloud (K3s).
     *   *Migration* : Upload manuel des 24 Go critiques.
 *   [ ] **Mirror Git** : Cron `git clone --mirror` de gitlab.com vers VPS-3 (réversibilité souveraine).
-*   [ ] **Bascule** : Changement DNS MX `cjenti.com` (mail perso) (Target : 21/02).
+*   [ ] **Bascule** : Changement DNS MX `cjenti.com` (mail perso) (Target : 15/03).
+
+> *Détails techniques dans `03-DEVOPS.md` et `04-SECOPS.md`.*
 
 ---
 
@@ -33,8 +35,10 @@
 ### Mars : Identité & Web
 *   [ ] **Migration Web** : Transfert domaines O2Switch -> OVH (`uyoop.fr`/`.com` pro + `cjenti.fr`/`.com` perso).
 *   [ ] **SSO** : Déploiement **Authelia** (LDAP Mailcow backend).
-*   [ ] **CMS** : Ghost Blog paramétré avec accès SSO.
+*   [ ] **BizOps** : Déploiement **Dolibarr** (Namespace `prod-gestion`) + **Mautic**.
 *   [ ] **Maintenance** : Activation de **Renovate Bot** pour suivi des mises à jour.
+
+> *Détails fonctionnels BizOps dans `07-BIZOPS.md`.*
 
 ### Avril : IA & Qualité (Extension "AI-Lab")
 *   [ ] **Infra** : Provisioning VPS-2 (6 vCores / 12 Go RAM / 100 Go NVMe) via Ansible Playbook réutilisé.
@@ -43,6 +47,8 @@
 *   [ ] **Qualité** : SonarQube avec Quality Gate stricte, intégré au pipeline gitlab.com.
 *   [ ] **Monitoring** : Déploiement **Prometheus** + **Grafana** + **AlertManager** (namespace `monitoring`). Alertes Discord/Mail sur CPU, RAM, disque, certificats.
 *   [ ] **Secrets** : Déploiement **Sealed Secrets** (Bitnami) pour chiffrer les secrets dans Git.
+
+> *Détails IA dans `05-AIOPS.md`.*
 
 ---
 

@@ -25,6 +25,7 @@
 | **Gérer le stockage des données** | Implémentation d'une stratégie de stockage hybride : **PV/PVC Kubernetes** (`local-path-provisioner`, inclus K3s) sur NVMe + **Object Storage S3** pour les archives. | Chap. 01 (Stratégie Données), Config StorageClasses. |
 | **Gérer des containers** | Conteneurisation de tous les services (Mailcow en Docker Compose standalone, Nextcloud/Ghost/Authelia en K3s). Gestion des images Docker et Registre privé (gitlab.com Container Registry). | `docker-compose.yml`, Pods K8s, Dockerfiles. |
 | **Automatiser la mise en prod** | Mise en place de pipelines **GitLab CI/CD** (gitlab.com SaaS + Runner self-hosted sur VPS-2) : Build, Scan de sécurité (Trivy/Sonar), Déploiement auto sur Cluster K3s. Démontre la compétence "infra hybride" (SaaS + On-premise). | Fichiers `.gitlab-ci.yml`, Rapport de scan SonarQube. |
+| **Intégrer les services métier** | Déploiement et maintien en condition opérationnelle de l'ERP **Dolibarr** (Gestion commerciale/comptable) et du Marketing Automation **Mautic**. Intégration du portail **uHub** (DevSecAiOps). Preuve d'alignement IT/Métier ("BizOps"). | Section `07-BIZOPS`, `08-INTEGRATION-UHUB`, Screenshots. |
 
 ---
 

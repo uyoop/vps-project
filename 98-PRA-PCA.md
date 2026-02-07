@@ -25,7 +25,7 @@
 | **Authelia** | 🟡 Important | < 24h | < 2h | Sans SSO, accès direct temporaire possible (bypass documenté). |
 | **GitLab** (gitlab.com SaaS) | 🟢 Faible | N/A | N/A | SaaS — résilience gérée par GitLab Inc. Mirror local = backup passif. |
 | **GitLab Runner** (VPS-2) | 🟢 Faible | N/A | < 4h | CI/CD peut attendre. Re-enregistrement Runner = 15 min. |
-| **SonarQube / Perplexica** (VPS-2) | 🟢 Faible | < 7j | < 1j | R&D — pas de données irremplaçables. Redéploiement Helm/Docker. |
+| **SonarQube / Open WebUI** (VPS-2) | 🟢 Faible | < 7j | < 1j | R&D — pas de données irremplaçables. Redéploiement Helm/Docker. |
 
 ---
 

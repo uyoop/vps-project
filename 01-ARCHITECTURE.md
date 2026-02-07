@@ -4,7 +4,8 @@
 > **Statut** : V2 (6 Février 2026) — Intègre stratégie GitLab hybride, corrections specs OVH, harmonisation sécurité.
 
 ## 1. Vision Technique & Slogan
-**uyoop : "Une stratégie à votre image"**
+**uyoop : Une stratégie à votre image.**
+### *Souveraineté. Sécurité. Intelligence Artificielle.*
 
 En DevSecOps, "votre image" n'est pas seulement graphique, c'est votre empreinte numérique (Docker Images, System Images). Notre stratégie est de rendre cette image **souveraine, sécurisée et immuable**.
 Nous passons d'une consommation passive de services (SaaS) à une **Infrastructure as Code (IaC)** où chaque configuration reflète exactement les besoins métier, sans compromis sur la sécurité.
@@ -24,7 +25,7 @@ Pour garantir la sécurité (isolation) et la performance (IA), l'architecture r
 *   **Infrastructure** : OVH **VPS-2** (6 vCores / 12 Go RAM / 100 Go NVMe).
 *   **Rôle** : R&D, Intelligence Artificielle, Analyse de Code, GitLab Runner self-hosted.
 *   **Charge** : Variable (Burstable), traitements lourds.
-*   **Services** : GitLab Runner (connecté à gitlab.com), LLM Local ou Gateway API, SonarQube (Quality Gate), Perplexica (Search).
+*   **Services** : GitLab Runner (connecté à gitlab.com), LLM Local (Ollama), SonarQube (Quality Gate), Open WebUI (Interface IA).
 
 > **Stratégie Noms de Domaine** :
 > *   `uyoop.fr` / `uyoop.com` — **Professionnel** : Vitrine, services métier, identité entreprise (`blog.uyoop.fr`, `git.uyoop.fr`).
@@ -58,6 +59,8 @@ Toute l'infrastructure est définie par le code (GitOps).
 | **Nextcloud** | Hub Collaboratif (Fichiers, Cal, Contacts) | `prod-cloud` | Mixte (Cache NVMe / Data S3) |
 | **GitLab** | Forge Logicielle & CI/CD (SaaS gitlab.com Phase 1-2, self-hosted optionnel Phase 3+) | `devops-factory` | gitlab.com (SaaS) + S3 (Artifacts) |
 | **Ghost** | CMS Vitrine & LMS | `prod-web` | NVMe |
+| **Mautic** | Marketing Automation & Emailing (vs Brevo) | `prod-marketing` (ou Docker) | MariaDB + NVMe |
+| **Dolibarr** | ERP & CRM (Facturation, Compta, Gestion) | `prod-gestion` | MariaDB + NVMe |
 | **Authelia** | Fournisseur d'Identité (SSO, OIDC, 2FA) | `security` | Redis (Session) |
 
 ### C. Sécurité "Defense-In-Depth"
@@ -134,6 +137,7 @@ graph TD
         Traefik -->|Route| Mailcow[Mailcow - mail.cjenti.com]
         Traefik -->|Route| Nextcloud[Nextcloud - drive.cjenti.com]
         Traefik -->|Route| Ghost[Ghost - blog.uyoop.fr]
+        Traefik -->|Route| Dolibarr[Dolibarr - gestion.uyoop.fr]
     end
     
     subgraph "gitlab.com (SaaS Free)"
@@ -143,7 +147,7 @@ graph TD
     subgraph "VPS AI-Lab (K3s Agent)"
         Runner[GitLab Runner]
         SonarQube
-        Perplexica
+        OpenWebUI
         Ollama[Ollama LLM]
     end
     
